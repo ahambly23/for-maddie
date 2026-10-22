@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3b1428">
+  <meta name="description" content="A little world made with love.">
+  <title>FOR MADISON ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-glow glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow glow-two" aria-hidden="true"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Our Little World home"><span class="tiny-heart">♥</span> for madison</a>
+      <span class="top-note">MADE WITH LOVE XXX</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span> ON OUR ONE YEAR ANNIVERSARY <span class="eyebrow-line"></span></p>
+      <h1>For my favourite<br><em>person in the world.</em></h1>
+      <p class="hero-copy">A few songs, many memories, and just a few of the reasons I love you.</p>
+      <button id="openGift" class="primary-button" type="button">Open your gift <span aria-hidden="true">♡</span></button>
+      <p class="scroll-hint">SCROLL DOWN <span aria-hidden="true">↓</span></p>
+    </section>
+
+    <section id="giftContent" class="content-grid" aria-label="Your anniversary gift">
+      <article class="panel music-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow align-left">SIDE A · JUST US</p>
+            <h2>Our soundtrack</h2>
+          </div>
+          <span class="round-icon" aria-hidden="true">♫</span>
+        </div>
+
+        <div class="now-playing">
+          <div id="albumArt" class="album-art">
+            <div class="album-orbit"></div>
+            <div class="album-heart">♥</div>
+            <span class="album-caption">a song for you</span>
+          </div>
+          <div class="track-info">
+            <p class="track-label">NOW PLAYING</p>
+            <h3 id="trackTitle">Our first song</h3>
+            <p id="trackArtist" class="track-artist">A little reminder of us</p>
+            <p id="trackNote" class="track-note">Every love story needs a soundtrack. This one's ours.</p>
+          </div>
+        </div>
+
+        <audio id="audio" preload="metadata"></audio>
+        <div class="progress-wrap">
+          <input id="progress" class="progress" type="range" min="0" max="100" value="0" aria-label="Track progress">
+          <div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+        </div>
+        <div class="player-controls">
+          <button id="prevTrack" class="icon-button" type="button" aria-label="Previous song">|‹</button>
+          <button id="playPause" class="play-button" type="button" aria-label="Play music">▶</button>
+          <button id="nextTrack" class="icon-button" type="button" aria-label="Next song">›|</button>
+        </div>
+        <p id="playerStatus" class="player-status" aria-live="polite">Add your MP3 files to the music folder to hear your songs.</p>
+        <div id="trackList" class="track-list" aria-label="Playlist"></div>
+      </article>
+    </section>
+
+    <section class="closing-note">
+      <span class="closing-heart" aria-hidden="true">♡</span>
+      <p class="eyebrow">AND ONE LAST THING</p>
+      <h2>In every version of my life,<br><em>I am yours and you are mine.</em></h2>
+      <p class="closing-copy">Thank you for being you, and for always making me better.</p>
+      <p class="signature">All my love, always <span>♥</span></p>
+    </section>
+
+    <footer class="footer">
+      <span>BUILT WITH LOVE & A LITTLE BIT OF CODE</span>
+      <span>YOU + ME <span class="footer-heart">♥</span></span>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
